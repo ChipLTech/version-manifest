@@ -16,10 +16,31 @@ jobs:
   refresh:
     runs-on: arc-runner-ci-router
     env:
+      TARGET_REPO_DIR: /home/runner/_work/version-manifest/version-manifest
       VERSION_MANIFEST_SOURCE_TOKEN: ${{ secrets.VERSION_MANIFEST_SOURCE_TOKEN }}
+      WORKFLOW_GITHUB_TOKEN: ${{ github.token }}
     steps:
-      - name: Checkout manifest repository
-        uses: actions/checkout@v5
+      - name: Prepare manifest repository
+        run: |
+          set -euo pipefail
+
+          if [ ! -d "${TARGET_REPO_DIR}/.git" ]; then
+            echo "::error::Expected git repository not found at ${TARGET_REPO_DIR}."
+            exit 1
+          fi
+
+          auth_header="$(printf 'x-access-token:%s' "${WORKFLOW_GITHUB_TOKEN}" | base64 | tr -d '\n')"
+
+          git config --global --add safe.directory "${TARGET_REPO_DIR}"
+          cd "${TARGET_REPO_DIR}"
+          git reset --hard
+          git clean -fd
+          git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic ${auth_header}" \
+            fetch --prune origin "${GITHUB_REF_NAME}"
+          git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
+          git reset --hard "origin/${GITHUB_REF_NAME}"
+          git clean -fd
 
       - name: Refresh latest commit manifest
         run: |
@@ -29,6 +50,8 @@ jobs:
             echo "::error::Missing VERSION_MANIFEST_SOURCE_TOKEN repository secret."
             exit 1
           fi
+
+          cd "${TARGET_REPO_DIR}"
 
           python3 - <<'PY'
           import json
@@ -82,8 +105,13 @@ jobs:
                   raise RuntimeError(f"GitHub API request failed with HTTP {exc.code}: {body}") from exc
 
           for repo, branch in tracked_repos.items():
+              print(f"Fetching {repo}/{branch}", flush=True)
               url = f"https://api.github.com/repos/ChipLTech/{repo}/commits/{branch}"
-              commit = github_json(url)
+              try:
+                  commit = github_json(url)
+              except RuntimeError as exc:
+                  raise RuntimeError(f"Failed to fetch {repo}/{branch}: {exc}") from exc
+
               sha = str(commit.get("sha", "")).strip().lower()
               if len(sha) != 40 or any(c not in "0123456789abcdef" for c in sha):
                   sys.exit(f"Invalid SHA returned for {repo}/{branch}: {sha}")
@@ -119,6 +147,11 @@ jobs:
 
       - name: Commit manifest update
         run: |
+          set -euo pipefail
+
+          auth_header="$(printf 'x-access-token:%s' "${WORKFLOW_GITHUB_TOKEN}" | base64 | tr -d '\n')"
+
+          cd "${TARGET_REPO_DIR}"
           git add check-version/latest.json
           if git diff --cached --quiet; then
             echo "No manifest changes to commit."
@@ -127,4 +160,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Refresh version manifest"
-          git push
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic ${auth_header}" \
+            push origin "HEAD:${GITHUB_REF_NAME}"
