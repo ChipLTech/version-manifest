@@ -1,0 +1,110 @@
+name: Update Version Manifest
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: Repository name, for example DLCsim
+        required: true
+        type: string
+      ref_type:
+        description: Ref type, currently only branch is accepted
+        required: true
+        type: string
+      ref_name:
+        description: Default branch name
+        required: true
+        type: string
+      latest_sha:
+        description: Latest commit SHA for the default branch
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: version-manifest-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: arc-runner-ci-router
+    env:
+      INPUT_REPO: ${{ inputs.repo }}
+      INPUT_REF_TYPE: ${{ inputs.ref_type }}
+      INPUT_REF_NAME: ${{ inputs.ref_name }}
+      INPUT_LATEST_SHA: ${{ inputs.latest_sha }}
+    steps:
+      - name: Checkout manifest repository
+        uses: actions/checkout@v4
+
+      - name: Validate and update manifest
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          tracked_repos = {
+              "DLCsim": "main",
+              "DLCSynapse": "main",
+              "DLC-Kernel-Driver": "master",
+              "DLC_CL": "inc_nsteps",
+              "LLVM": "main",
+              "DLC_Custom_Kernel": "develop",
+              "pytorch": "release_25",
+              "vllm": "update-v0.11.0",
+          }
+
+          repo = os.environ["INPUT_REPO"].strip()
+          ref_type = os.environ["INPUT_REF_TYPE"].strip()
+          ref_name = os.environ["INPUT_REF_NAME"].strip()
+          latest_sha = os.environ["INPUT_LATEST_SHA"].strip().lower()
+
+          if repo not in tracked_repos:
+              sys.exit(f"Unsupported repository: {repo}")
+          if ref_type != "branch":
+              sys.exit(f"Unsupported ref_type for {repo}: {ref_type}")
+          if ref_name != tracked_repos[repo]:
+              sys.exit(f"Unexpected ref_name for {repo}: {ref_name}; expected {tracked_repos[repo]}")
+          if not re.fullmatch(r"[0-9a-f]{40}", latest_sha):
+              sys.exit(f"Invalid latest_sha for {repo}: must be a 40-character hex SHA")
+
+          path = Path("check-version/latest.json")
+          now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+          if path.exists():
+              data = json.loads(path.read_text(encoding="utf-8"))
+          else:
+              data = {"schema_version": 1, "generated_at": now, "repos": {}}
+
+          if data.get("schema_version") != 1:
+              sys.exit(f"Unsupported manifest schema_version: {data.get('schema_version')}")
+
+          data["generated_at"] = now
+          repos = data.setdefault("repos", {})
+          repos[repo] = {
+              "ref_type": ref_type,
+              "ref_name": ref_name,
+              "latest_sha": latest_sha,
+              "updated_at": now,
+          }
+
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+          PY
+
+      - name: Commit manifest update
+        run: |
+          git add check-version/latest.json
+          if git diff --cached --quiet; then
+            echo "No manifest changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update ${INPUT_REPO} version manifest"
+          git push
