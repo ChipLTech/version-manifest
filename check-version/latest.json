@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T03:28:07Z",
+  "generated_at": "2026-06-18T05:56:54Z",
   "repos": {
     "DLC-Kernel-Driver": {
       "latest_sha": "cf7cda07fa71f30dd40d39a9ba4efa18e5717863",
@@ -14,16 +14,16 @@
       "updated_at": "2026-06-18T03:28:07Z"
     },
     "DLC_CL": {
-      "latest_sha": "e1254f2f2564b7b85e01b66e0ed432655d9d1f5d",
+      "latest_sha": "b019e44589021332bfb25e6307013d6fe53818d9",
       "ref_name": "inc_nsteps",
       "ref_type": "branch",
-      "updated_at": "2026-06-18T03:28:07Z"
+      "updated_at": "2026-06-18T05:56:54Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "127dc197153b04eb28eb16b787d759695a795c62",
+      "latest_sha": "23bd63b11858e87ddc980660a1f3a23f39501df1",
       "ref_name": "develop",
       "ref_type": "branch",
-      "updated_at": "2026-06-18T03:28:07Z"
+      "updated_at": "2026-06-18T05:56:54Z"
     },
     "DLCsim": {
       "latest_sha": "57a380766b8d7e20e0848ff722265a3d39d167ee",
