@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T01:22:25Z",
+  "generated_at": "2026-06-26T03:27:12Z",
   "repos": {
     "DLC-Kernel-Driver": {
       "latest_sha": "526fe1f105b960721dcbfbd3f48950911c6d3707",
@@ -8,22 +8,22 @@
       "updated_at": "2026-06-23T02:05:39Z"
     },
     "DLCSynapse": {
-      "latest_sha": "14c165830d120e791142eb829c82c07554ae819f",
+      "latest_sha": "b8bd52fb7bef2bd090eec2e742ff97e24fd310b0",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-06-25T03:27:04Z"
+      "updated_at": "2026-06-26T03:27:12Z"
     },
     "DLC_CL": {
-      "latest_sha": "019a29605d050b274ebb9f965531b0008c47c9a9",
+      "latest_sha": "97c0b467d16ac8596122ce134414561eeadb2509",
       "ref_name": "inc_nsteps",
       "ref_type": "branch",
-      "updated_at": "2026-06-26T01:22:25Z"
+      "updated_at": "2026-06-26T03:27:12Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "f18e50a1952f10ece8053f6b7a9112aafef82bdc",
+      "latest_sha": "eff544602209705b941197f4f00e445b49f1d108",
       "ref_name": "develop",
       "ref_type": "branch",
-      "updated_at": "2026-06-25T11:31:39Z"
+      "updated_at": "2026-06-26T03:27:12Z"
     },
     "DLCsim": {
       "latest_sha": "b9f2941a5afc24e703796a2758377f70521a80ea",
