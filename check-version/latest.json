@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T14:58:57Z",
+  "generated_at": "2026-07-24T01:57:53Z",
   "repos": {
     "DLC-Kernel-Driver": {
       "latest_sha": "e9397103d6214cea3e778cfedb339cfe6d4aff8d",
@@ -8,10 +8,10 @@
       "updated_at": "2026-07-23T03:25:39Z"
     },
     "DLCSynapse": {
-      "latest_sha": "d72226281865f34b57a51c40575c47808c49f690",
+      "latest_sha": "32a6b02b13fdca4b96a87e840a40f13fef5b1c04",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-22T03:25:34Z"
+      "updated_at": "2026-07-24T01:57:53Z"
     },
     "DLC_CL": {
       "latest_sha": "3260734956255c397d2bb13d39080ff044064a0c",
@@ -38,10 +38,10 @@
       "updated_at": "2026-07-23T08:02:42Z"
     },
     "pytorch": {
-      "latest_sha": "5b058eb2848853f3094be30d7a04155268f47133",
+      "latest_sha": "8bcab9dac72c81b6d5fa4a36c3d42ec0425a58f4",
       "ref_name": "release_25",
       "ref_type": "branch",
-      "updated_at": "2026-07-23T09:10:19Z"
+      "updated_at": "2026-07-24T01:57:53Z"
     },
     "vllm": {
       "latest_sha": "004ef9b4d9ac0de8da7eb8eeca36368c4586d734",
