@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-24T09:07:30Z",
+  "generated_at": "2026-07-24T10:01:05Z",
   "repos": {
     "DLC-Kernel-Driver": {
-      "latest_sha": "4cc1732803740e4b60a5879a3a69d265bf132e14",
+      "latest_sha": "89fb268a1d86ed4d585887a6458f48e56b023587",
       "ref_name": "master",
       "ref_type": "branch",
-      "updated_at": "2026-07-24T07:10:22Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     },
     "DLCSynapse": {
-      "latest_sha": "32a6b02b13fdca4b96a87e840a40f13fef5b1c04",
+      "latest_sha": "3cbca75ba5143c0f74df89c699377f47bdee0273",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-24T01:57:53Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     },
     "DLC_CL": {
       "latest_sha": "3260734956255c397d2bb13d39080ff044064a0c",
@@ -20,34 +20,34 @@
       "updated_at": "2026-07-23T09:10:19Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "391df4b45c45bc220d843a847d34730d34d986eb",
+      "latest_sha": "d031d10f549f71b1d80c0678c6fa54c5ee4e8e39",
       "ref_name": "develop",
       "ref_type": "branch",
-      "updated_at": "2026-07-24T08:00:09Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     },
     "DLCsim": {
-      "latest_sha": "9ae2bd83183fc31410ba3a62b389200b2f3c0ed4",
+      "latest_sha": "c88de2079993ef44bc5501633795a846824bf84d",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-24T09:07:30Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     },
     "LLVM": {
-      "latest_sha": "85ac4d4b1d98424b91d9a7fca18e1c7b9a3120a9",
+      "latest_sha": "a6d4145cd52fb24a38a432f401da355884f4f8e9",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-24T03:25:22Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     },
     "pytorch": {
-      "latest_sha": "82df9fff7adb599a87f7488d3bd722ef5ee9d8d1",
+      "latest_sha": "a655d3d8b3d4fc91aa33dbdd43388c6e72c6eac5",
       "ref_name": "release_25",
       "ref_type": "branch",
-      "updated_at": "2026-07-24T03:25:22Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     },
     "vllm": {
-      "latest_sha": "004ef9b4d9ac0de8da7eb8eeca36368c4586d734",
+      "latest_sha": "4dddac1719c18d6a150563c51c062164c2f2a5ba",
       "ref_name": "update-v0.11.0",
       "ref_type": "branch",
-      "updated_at": "2026-07-19T05:25:52Z"
+      "updated_at": "2026-07-24T10:01:05Z"
     }
   },
   "schema_version": 1
