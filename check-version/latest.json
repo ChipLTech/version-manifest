@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T10:11:09Z",
+  "generated_at": "2026-07-29T05:25:38Z",
   "repos": {
     "DLC-Kernel-Driver": {
       "latest_sha": "55f6b23086f4f7e0e05e484e7d1d93b6709b55ba",
@@ -20,10 +20,10 @@
       "updated_at": "2026-07-27T09:28:19Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "38b940439361a93d1e9b9aa50441d29976b5ef56",
+      "latest_sha": "be9cb66a9099fcb029263d39faaa7876f72272d8",
       "ref_name": "develop",
       "ref_type": "branch",
-      "updated_at": "2026-07-28T10:11:09Z"
+      "updated_at": "2026-07-29T05:25:38Z"
     },
     "DLCsim": {
       "latest_sha": "99acf466e3b2c6d7e1bfd9aa4852cedd06dabc58",
@@ -38,10 +38,10 @@
       "updated_at": "2026-07-28T10:11:09Z"
     },
     "pytorch": {
-      "latest_sha": "e1ab552d53557c3d7b132070c38ba9d98c38600e",
+      "latest_sha": "2938253a01d7e3b2d9abbef19ca597054d2916ed",
       "ref_name": "release_25",
       "ref_type": "branch",
-      "updated_at": "2026-07-27T09:28:19Z"
+      "updated_at": "2026-07-29T05:25:38Z"
     },
     "vllm": {
       "latest_sha": "4dddac1719c18d6a150563c51c062164c2f2a5ba",
