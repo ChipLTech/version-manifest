@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-30T07:59:18Z",
+  "generated_at": "2026-07-30T09:12:01Z",
   "repos": {
     "DLC-Kernel-Driver": {
-      "latest_sha": "899f46a24ccaa26792ed28540ccd653d1b93360b",
+      "latest_sha": "8f81fa3fcad68b30388ef05cdfc85bc210e551ae",
       "ref_name": "master",
       "ref_type": "branch",
-      "updated_at": "2026-07-30T05:18:39Z"
+      "updated_at": "2026-07-30T09:12:01Z"
     },
     "DLCSynapse": {
-      "latest_sha": "b993e7de04faf690905e1557d143dbe04260a990",
+      "latest_sha": "e0774c1dbb817c635178b0ba2191978a87e7e817",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-29T08:08:28Z"
+      "updated_at": "2026-07-30T09:12:01Z"
     },
     "DLC_CL": {
       "latest_sha": "761f860596b87e6a529f4e95ce8cfdd852d6f31b",
@@ -26,16 +26,16 @@
       "updated_at": "2026-07-29T09:15:55Z"
     },
     "DLCsim": {
-      "latest_sha": "99acf466e3b2c6d7e1bfd9aa4852cedd06dabc58",
+      "latest_sha": "48782d9407a28d4cfd611ae5de79a2960cc61392",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-28T01:57:30Z"
+      "updated_at": "2026-07-30T09:12:01Z"
     },
     "LLVM": {
-      "latest_sha": "93e737fbfa6bf42902bc2c832a8affad9ca3a048",
+      "latest_sha": "b58d851c4d4128c8f4fe360314a0c9d94ce575ae",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-30T07:59:18Z"
+      "updated_at": "2026-07-30T09:12:01Z"
     },
     "pytorch": {
       "latest_sha": "2938253a01d7e3b2d9abbef19ca597054d2916ed",
