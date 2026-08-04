@@ -65,12 +65,12 @@ jobs:
           tracked_repos = {
               "DLCsim": "main",
               "DLCSynapse": "main",
-              "DLC-Kernel-Driver": "master",
-              "DLC_CL": "inc_nsteps",
+              "DLC-Kernel-Driver": "main",
+              "DLC_CL": "main",
               "LLVM": "main",
-              "DLC_Custom_Kernel": "develop",
-              "pytorch": "release_25",
-              "vllm": "update-v0.11.0",
+              "DLC_Custom_Kernel": "main",
+              "pytorch": "main",
+              "vllm": "main",
           }
 
           token = os.environ["VERSION_MANIFEST_SOURCE_TOKEN"].strip()
