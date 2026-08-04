@@ -1,53 +1,53 @@
 {
-  "generated_at": "2026-07-31T11:08:56Z",
+  "generated_at": "2026-08-04T09:56:54Z",
   "repos": {
     "DLC-Kernel-Driver": {
-      "latest_sha": "7d5976a5427309aa617903a9700a4aad6a5d69b5",
-      "ref_name": "master",
+      "latest_sha": "793ffabfdf221d548032e50c3a832b6215021b58",
+      "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-31T05:28:03Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "DLCSynapse": {
-      "latest_sha": "d6e00c40f21379880c4ee42691d5c2980b62fcfb",
+      "latest_sha": "3d4dd8ec1253fd37d72d367c16fc7b13b7d7a40f",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-31T11:08:56Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "DLC_CL": {
-      "latest_sha": "e978a7cb8a24d406fa4dcac7953d15313edcf9da",
-      "ref_name": "inc_nsteps",
+      "latest_sha": "038141062941b3165b12c730413c99398d2d2bb0",
+      "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-31T08:19:12Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "dfcd45a4cdf2b92b3ee3479347e9e5d485743070",
-      "ref_name": "develop",
+      "latest_sha": "2dc5238760646c6c546885aa857ae5408e95790a",
+      "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-29T09:15:55Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "DLCsim": {
-      "latest_sha": "48782d9407a28d4cfd611ae5de79a2960cc61392",
+      "latest_sha": "d2ee2e852b725bea3cf1c6faa05f65e5f3b3a8d2",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-30T09:12:01Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "LLVM": {
-      "latest_sha": "95863523643170e419ab0dcbaf65a0c37cd87cb3",
+      "latest_sha": "7d8d3952b5f948fce34ae76c88cb923bd3bd02a9",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-31T03:28:17Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "pytorch": {
-      "latest_sha": "199cca449d4766da4c2e902ce8544d2006feef94",
-      "ref_name": "release_25",
+      "latest_sha": "cc3ea71e1335d33179ac06aa15036f6845dbb61c",
+      "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-31T11:08:56Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     },
     "vllm": {
-      "latest_sha": "7449d250c6f3db7441eabb761bc1b0b6271e771f",
-      "ref_name": "update-v0.11.0",
+      "latest_sha": "2d352a2a5e1cc0c8dd0248b05515a27068216ebd",
+      "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-07-31T01:58:35Z"
+      "updated_at": "2026-08-04T09:56:54Z"
     }
   },
   "schema_version": 1
