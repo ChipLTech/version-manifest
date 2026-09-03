@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-03T08:34:38Z",
+  "generated_at": "2026-09-03T09:29:40Z",
   "repos": {
     "DLC-Kernel-Driver": {
-      "latest_sha": "4af08fbf0d21b3bb0e6fd67b28024b37705d0fa7",
+      "latest_sha": "bfff47dd4f738a6bdc2ffc4d1fa5a7ec1d7183f1",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-03T08:34:38Z"
+      "updated_at": "2026-09-03T09:29:40Z"
     },
     "DLCSynapse": {
-      "latest_sha": "609ba3c3106e21898a11267bbe1c8e4048736acf",
+      "latest_sha": "39440509b382b588e43fab705ccfe4ba7c33498d",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-02T07:30:03Z"
+      "updated_at": "2026-09-03T09:29:40Z"
     },
     "DLC_CL": {
-      "latest_sha": "9d713d3fc0be7631d86619d43b986cc38eb40c65",
+      "latest_sha": "bc2bb066743bd9ee956d7f7020c4ef35e356c38b",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-03T05:23:50Z"
+      "updated_at": "2026-09-03T09:29:40Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "02a6b2cbd9f51ea179c6a083a7d354ebdd2ebc49",
+      "latest_sha": "b6822959b79adee182e29920ddc65e232b7bd239",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-03T08:34:38Z"
+      "updated_at": "2026-09-03T09:29:40Z"
     },
     "DLCsim": {
       "latest_sha": "2f19d6bccf5f2ebeb883c5a841e32b10972134ec",
@@ -38,16 +38,16 @@
       "updated_at": "2026-09-03T08:34:38Z"
     },
     "pytorch": {
-      "latest_sha": "7e3d4d5862c6638b9339c98d00005cf121c8aabc",
+      "latest_sha": "52ea755b660a9b657d38d4fe2e3034d507da5c1f",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-01T11:24:35Z"
+      "updated_at": "2026-09-03T09:29:40Z"
     },
     "vllm": {
-      "latest_sha": "e9155e56d758de27315ec84c4396d7e4ae87ba68",
+      "latest_sha": "031a9020cc124eee4a0f54940496642c09fcfd08",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-08-28T04:58:20Z"
+      "updated_at": "2026-09-03T09:29:40Z"
     }
   },
   "schema_version": 1
