@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-08T01:35:28Z",
+  "generated_at": "2026-09-08T02:33:48Z",
   "repos": {
     "DLC-Kernel-Driver": {
-      "latest_sha": "bfff47dd4f738a6bdc2ffc4d1fa5a7ec1d7183f1",
+      "latest_sha": "ba23c79327bb70731e0ff18da3ff7c4f5b3c0f1d",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-03T09:29:40Z"
+      "updated_at": "2026-09-08T02:33:48Z"
     },
     "DLCSynapse": {
-      "latest_sha": "39440509b382b588e43fab705ccfe4ba7c33498d",
+      "latest_sha": "fdab4970d72542e096eb4f1ec7962f47ddcf6ac0",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-03T09:29:40Z"
+      "updated_at": "2026-09-08T02:33:48Z"
     },
     "DLC_CL": {
-      "latest_sha": "3c75fe99fd730b1f7887da42aec2b6ca13a50345",
+      "latest_sha": "4fd9ed8c1062c18e01176bc824444deedc192d15",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-08T01:35:28Z"
+      "updated_at": "2026-09-08T02:33:48Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "0553ba4ce940280ea8f4337b398b415b10e5b35c",
+      "latest_sha": "609e867bf739b979505c9d8e3676a5d187367014",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-07T16:27:18Z"
+      "updated_at": "2026-09-08T02:33:48Z"
     },
     "DLCsim": {
       "latest_sha": "3b4f4407df65eb783979303804fb1872951ee594",
@@ -32,10 +32,10 @@
       "updated_at": "2026-09-07T06:50:41Z"
     },
     "LLVM": {
-      "latest_sha": "58e70edef493b5c4c31d6353c2b9301d1e7e6329",
+      "latest_sha": "6cadfa22a90902b1cfba7ecf0bd83e66eca3acf4",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-03T10:27:50Z"
+      "updated_at": "2026-09-08T02:33:48Z"
     },
     "pytorch": {
       "latest_sha": "2382c4c0db2fd35a29ec59b398d3ac09c6f3b634",
@@ -44,10 +44,10 @@
       "updated_at": "2026-09-08T01:35:28Z"
     },
     "vllm": {
-      "latest_sha": "26005455ce51edff5d9f504f1255fe6c719fedfa",
+      "latest_sha": "16d00565bc073337fcadc194bef7ec4179217a17",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-07T03:32:37Z"
+      "updated_at": "2026-09-08T02:33:48Z"
     }
   },
   "schema_version": 1
