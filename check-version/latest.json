@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T10:43:01Z",
+  "generated_at": "2026-09-11T00:58:07Z",
   "repos": {
     "DLC-Kernel-Driver": {
       "latest_sha": "ba23c79327bb70731e0ff18da3ff7c4f5b3c0f1d",
@@ -38,10 +38,10 @@
       "updated_at": "2026-09-09T01:36:11Z"
     },
     "pytorch": {
-      "latest_sha": "2382c4c0db2fd35a29ec59b398d3ac09c6f3b634",
+      "latest_sha": "e772b860f39a1892c9635d83eb41bfad135bcdae",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-08T01:35:28Z"
+      "updated_at": "2026-09-11T00:58:07Z"
     },
     "vllm": {
       "latest_sha": "16d00565bc073337fcadc194bef7ec4179217a17",
