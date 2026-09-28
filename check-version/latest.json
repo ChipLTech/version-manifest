@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-28T04:35:21Z",
+  "generated_at": "2026-09-28T06:57:12Z",
   "repos": {
     "DLC-Kernel-Driver": {
-      "latest_sha": "aa84e677db3e14cd9b704534e421e0290dee7b99",
+      "latest_sha": "5b13ed928a4ff5dfb82efa606a5ff2a77afdb1ea",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-28T01:46:30Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     },
     "DLCSynapse": {
-      "latest_sha": "be4dd338979bbab8c628ec1ee58aadc47d7d2567",
+      "latest_sha": "32631cb11e6bd784165b935d8b8369f59a71a5bf",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-24T12:38:33Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     },
     "DLC_CL": {
-      "latest_sha": "f91a6334a2657840fdcf82dc999d5f8281911802",
+      "latest_sha": "67a523840e085409c86ede0ded3dca90e3a7501e",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-28T01:46:30Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "ea19fee491617a6bbd38987409dff8e51baddfb9",
+      "latest_sha": "c2b1797b639f75655160bcbfc5bf5336d09e47ef",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-28T04:35:21Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     },
     "DLCsim": {
       "latest_sha": "265d464fc95cb363edf5f5e1906c2f48ac1e317f",
@@ -32,22 +32,22 @@
       "updated_at": "2026-09-24T02:35:55Z"
     },
     "LLVM": {
-      "latest_sha": "ba96d0589f975e3871f0c692dd070eafd742ae8c",
+      "latest_sha": "1bb196aea51c5a5202ec04d664af72b63cb0d971",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-28T01:46:30Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     },
     "pytorch": {
-      "latest_sha": "f35ff678cf5b24eb27130f35d9f7e8fe43f12857",
+      "latest_sha": "3eddf7fa1cccbb94fddde984bf8402af12fb8303",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-28T01:46:30Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     },
     "vllm": {
-      "latest_sha": "b823455216e1dbeed75f23589e5e236b643499ed",
+      "latest_sha": "0058d0d392e0555d1e92feb2fc599a1d661afeb2",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-09-21T09:35:08Z"
+      "updated_at": "2026-09-28T06:57:12Z"
     }
   },
   "schema_version": 1
