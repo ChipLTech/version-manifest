@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T09:47:52Z",
+  "generated_at": "2026-10-13T08:44:03Z",
   "repos": {
     "DLC-Kernel-Driver": {
       "latest_sha": "42eb8d04cd63913a85ab0a59b586cc2c1ce3c5a5",
@@ -8,10 +8,10 @@
       "updated_at": "2026-10-12T09:47:52Z"
     },
     "DLCSynapse": {
-      "latest_sha": "e839467548ff5da323f4e8e2435652533c740253",
+      "latest_sha": "290fb8a7a0034d0306438d4449ccb79e226a7280",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-10-12T09:47:52Z"
+      "updated_at": "2026-10-13T08:44:03Z"
     },
     "DLC_CL": {
       "latest_sha": "c4b2968953d3458fe415454343b104d9b13d25a6",
@@ -20,16 +20,16 @@
       "updated_at": "2026-10-10T10:27:18Z"
     },
     "DLC_Custom_Kernel": {
-      "latest_sha": "a53a17fb475f849d0126e0f91d8588bcbea441b8",
+      "latest_sha": "ce8c868b137b58b4372d5daf2f2a8e721d8f2328",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-10-12T07:04:08Z"
+      "updated_at": "2026-10-13T08:44:03Z"
     },
     "DLCsim": {
-      "latest_sha": "5bfa8963893adcb6875a39f401c868ce672be0b8",
+      "latest_sha": "ceac40d7a9e7e949d859eae415981ab1ac1b874e",
       "ref_name": "main",
       "ref_type": "branch",
-      "updated_at": "2026-10-10T09:29:21Z"
+      "updated_at": "2026-10-13T08:44:03Z"
     },
     "LLVM": {
       "latest_sha": "2fb2abd9e629434fba8cc418572c905bef6ac09c",
