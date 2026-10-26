@@ -63,6 +63,7 @@ jobs:
           from pathlib import Path
 
           tracked_repos = {
+              "CLsim": "main",
               "DLCsim": "main",
               "DLCSynapse": "main",
               "DLC-Kernel-Driver": "main",
